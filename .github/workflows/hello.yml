@@ -28,3 +28,9 @@ jobs:
         env:
           WHO_TO_GREET: 'GitHub Actions Student'
         run: python hello.py
+
+      # Start testing step
+      - name: Run unit tests
+        run: |
+           pip install pytest
+           pytest
